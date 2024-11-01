@@ -1,0 +1,1 @@
+<? include('themes/header.php'); ?><? include('themes/footer.php'); ?>

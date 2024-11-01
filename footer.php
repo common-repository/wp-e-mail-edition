@@ -1,0 +1,1 @@
+<div style="clear:both; border-top: 1px dotted #00AEEF;"></div><br><center>Powered by WP E-mail Edition, created by <a href="http://wpdavis.com">William P. Davis</a></center></div></body></html>

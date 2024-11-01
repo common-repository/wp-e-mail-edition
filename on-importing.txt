@@ -1,0 +1,61 @@
+On importing
+------------
+
+First of all, PLEASE READ THIS ENTIRE DOCUMENT BEFORE IMPORTING USERS.
+
+The biggest problem you might face importing is unconsistent files from College Publisher. Before you import your users, you might have to do a small amount of formatting.
+
+
+Importing from FeedBurner
+------------------------
+
+Importing your FeedBurner subscribers should be no problem. Your file should look something like this:
+
+*-------------------*
+Email,Subscribed,Status
+address@aol.com,06/17/2009 09:52,Active
+address@gmail.com,04/30/2009 01:37,Pending Verification
+*-------------------*
+
+To prepare the list for import, simply delete the first line (Email,Subscribed,Status)
+
+
+
+Importing from College Publisher
+--------------------------------
+
+Importing from College Publisher is more difficult, because their lists aren't automatically created. You're going to want your list to look something like this:
+
+*-------------------*
+First,Last,address@aol.com
+First,Last,address@gmail.com
+*-------------------*
+
+When you first get your list from CP, though, it will most likely look something like this:
+
+*-------------------*
+first_name                                         last_name                                          email
+-------------------------------------------------- -------------------------------------------------- ----------------------------------------------------------------------------------------------------
+first                                              last                                               address@aol.com
+first                                              last                                               address@gmail.com
+*-------------------*
+
+or this:
+*-------------------*
+first	last	address@aol.com
+first	last	address@gmail.com
+*-------------------*
+
+The first example is from a fixed-width file, the second from a tab delimited file.
+To import these, you need to turn them into comma delimted files.
+
+First, open a black sheet in Excel. Go to Data > Get external data and select import text file. Excel should automatically detect whether the file is fixed width or delimited, and you can simply save your new database as a csv. If the first line or two are not data (i.e. names of the columns), you will need to delete them.
+
+Finally, you need to make sure your csv is saved using a compatible charset, otherwise the users won't import correctly. To do this, open your csv in a text editor and copy and paste the entire contents into a new text document. Save that document as import.csv.
+
+
+
+Importing, finally
+------------------
+
+To import the file, upload your csv to wp-content and name it import.csv. Then go to the admin panel for Courier and follow the instructions there. Please make sure to delete the file when you're done.

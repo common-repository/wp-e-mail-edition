@@ -1,0 +1,1 @@
+<?php/*Plugin Name: (Deprecated)Plugin URI: http://www.wpdavis.comDescription: Please upgrade to Courier at http://wordpress.org/extend/plugins/courier/ Author: William P. DavisRequires at least: 2.7Tested up to: 2.8Version: 0.2Author URI: http://www.wpdavis.com*/?>

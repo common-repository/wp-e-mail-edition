@@ -1,0 +1,1 @@
+<html><head><title><?=$title ?> - <?=get_bloginfo('name') ?></title><style type="text/css">#container {	width:850px;	margin:auto;	}</style></head><body><div id="container"><h1 style="color:#00AEEF;"><?=$title ?></h1><div style="clear:both; border-top: 1px dotted #00AEEF;"></div><br>
